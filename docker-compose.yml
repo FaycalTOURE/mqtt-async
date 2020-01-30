@@ -1,0 +1,17 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+  mqtt-broker:
+    build: ./mosquitto/image
+    volumes:
+      - mosquitto-data:/mosquitto/data
+      - mosquitto-log:/mosquitto/log
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+volumes:
+  mosquitto-data:
+    driver: local
+  mosquitto-log:
+    driver: local

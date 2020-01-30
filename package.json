@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-mqtt-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "8.2.0",
+    "file-system": "2.2.2",
+    "mqtt": "^2.18.8",
+    "npx": "10.2.2",
+    "path": "0.12.7"
+  },
+  "devDependencies": {
+    "nvm": "0.0.4"
+  }
+}
